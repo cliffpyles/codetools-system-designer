@@ -1,0 +1,21 @@
+toolbar:
+  props:
+    tools:
+      - name: pen
+        id: pen
+        icon: Pen
+        type: tool
+        settings:
+          color: black
+      - name: shape
+        id: shape
+        icon: Shape
+        type: tool
+        settings:
+          color: black
+  state:
+    selected_tool: pen
+    tool_settings:
+      color: black
+canvas:
+  object_instances: []

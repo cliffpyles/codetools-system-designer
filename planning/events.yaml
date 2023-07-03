@@ -1,0 +1,49 @@
+user_events:
+  toolbar:
+    - select tool
+    - select next tool
+    - select previous tool
+    - select last tool
+    - view tool settings
+    - update tool settings
+    - drag object
+    - move toolbar
+
+  canvas:
+    - drop object
+    - click
+    - create object instance
+    - select object instance
+    - select object instances
+    - delete object instance
+    - delete object instances
+    - move object instance
+    - move object instances
+    - resize object instance
+    - connect object instances
+    - drag anchor
+    - hover over object instance
+    - show object instance settings
+    - hide object instance settings
+    - update object instance setting
+    - save object instance setting changes
+    - cancel object instance setting changes
+    - undo object instance move
+    - undo object instance resize
+    - undo object instance deletion
+    - undo object instance creation
+    - show grid
+    - hide grid
+    - toggle grid
+    - snap object instance to grid
+    - show rulers
+    - hide rulers
+    - toggle rulers
+    - snap object instance to ruler
+    - drag ruler
+    - insert ruler
+    - delete ruler
+    - move ruler
+
+
+  
