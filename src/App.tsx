@@ -38,6 +38,12 @@ import {
   CategoryList,
   CategoryShow,
 } from "./pages/categories";
+import {
+  SystemCreate,
+  SystemEdit,
+  SystemList,
+  SystemShow,
+} from "./pages/systems";
 import { ForgotPassword } from "./pages/forgotPassword";
 import { Login } from "./pages/login";
 import { Register } from "./pages/register";
@@ -96,6 +102,16 @@ function App() {
                       canDelete: true,
                     },
                   },
+                  {
+                    name: "systems",
+                    list: "/systems",
+                    create: "/systems/create",
+                    edit: "/systems/edit/:id",
+                    show: "/systems/show/:id",
+                    meta: {
+                      canDelete: true,
+                    },
+                  },
                 ]}
                 options={{
                   syncWithLocation: true,
@@ -129,6 +145,12 @@ function App() {
                       <Route path="create" element={<CategoryCreate />} />
                       <Route path="edit/:id" element={<CategoryEdit />} />
                       <Route path="show/:id" element={<CategoryShow />} />
+                    </Route>
+                    <Route path="/systems">
+                      <Route index element={<SystemList />} />
+                      <Route path="create" element={<SystemCreate />} />
+                      <Route path="edit/:id" element={<SystemEdit />} />
+                      <Route path="show/:id" element={<SystemShow />} />
                     </Route>
                     <Route path="*" element={<ErrorComponent />} />
                   </Route>
